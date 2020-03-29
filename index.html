@@ -1,12 +1,27 @@
-Hello World
-
-
-<!-- index.htmlがあるディレクトリに移動する -->
-cd /Users/neppsstaff/Desktop/ihsagawebsite.github.io
-<!-- 編集したファイルを認識する -->
-git add .
-<!-- ローカルのパソコンで編集したファイルを保存する -->
-git commit -m '好きなメッセージ'
-<!-- github上のファイルをローカルのパソコンのファイルで上書きする -->
-git push origin master
-
+<!DOCTYPE html>
+<html lang="ja-jp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | 小豆がいと甘し和菓子の餡</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="scrollaction-1.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/MANJUisWAGASHIofWAGASHI.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">小豆がいと甘し和菓子の餡</div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
